@@ -1,0 +1,28 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h2>Add a Movie</h2>
+<form method="POST">
+    {% csrf_token %}<br>
+    Movie Title: <textarea name="title" rows="1" cols="50" required
+                    maxlength="50" required ></textarea><br>
+    Release Date: <input type="date" id="start" required
+                   value="yyyy-mm-dd"
+                   min="1900-01-01" max=Da><br>
+    Genre: <select name="-- select an option --" required>
+                <option value="">-- select an option --</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+        </select><br>
+    Rating: <select name="-- select an option --" required>
+                <option value="">-- select an option --</option>
+                <option value="R">R</option>
+                <option value="G">G</option>
+                <option value="PG">PG</option>
+                <option value="PG-13">PG-13</option>
+                <option value="Not Rated">PG-13</option>
+            </select><br>
+    Gross: <input type="number" required min="0" max="1000000000" step="1"><br>
+    <input type="submit">
+</form>

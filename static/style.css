@@ -1,0 +1,27 @@
+p,li,th,td
+{
+font-family: "comic sans ms";
+color: black;
+text-align: center;
+word-spacing: normal;
+}
+h1,h2,h3 {
+  text-align: center;
+}
+iframe
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+a:link {font-family: "comic sans ms" ; color:white}
+a:visited  {color:white}
+a:active   {color:yellow}
+a:hover    {color:red}
+
+body {background-color: #CCAABB}
+img
+{
+    border: none;
+    image-align: center;
+}
